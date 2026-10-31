@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dk52jx0jwpjs"]
+
+[ext_resource type="Texture2D" uid="uid://8i201icfgdxw" path="res://Spritesheet/roguelikeSheet_transparent.png" id="1_1bpe2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4u12p"]
+size = Vector2(32, 33)
+
+[node name="Filtre" type="StaticBody2D" unique_id=1916066375]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=317360713]
+z_index = 1
+texture = ExtResource("1_1bpe2")
+region_enabled = true
+region_rect = Rect2(119.64002, 221.16006, 31.680016, 31.679993)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1157074014]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_4u12p")
